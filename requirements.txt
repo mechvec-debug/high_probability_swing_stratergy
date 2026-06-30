@@ -1,4 +1,4 @@
-streamlit1.35.0
+streamlit
 pandas2.2.2
 yfinance0.2.40
 numpy1.26.4
