@@ -1,0 +1,50 @@
+[
+    {
+        "ticker": "SHAILY",
+        "action": "BUY",
+        "entry": 2895.5,
+        "sl": 2626.81,
+        "tp1": 3164.19,
+        "tp2": 3432.87,
+        "tp3": 3701.56,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "BUY pullbacks",
+        "time_received": "2026-06-30 21:55:01"
+    },
+    {
+        "ticker": "CONCOR",
+        "action": "BUY",
+        "entry": 475.25,
+        "sl": 456.99,
+        "tp1": 493.51,
+        "tp2": 511.76,
+        "tp3": 530.02,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-06-30 21:54:09"
+    },
+    {
+        "ticker": "HEXT",
+        "action": "BUY",
+        "entry": 514.85,
+        "sl": 473.47,
+        "tp1": 556.23,
+        "tp2": 597.61,
+        "tp3": 638.99,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-06-30 21:53:13"
+    },
+    {
+        "ticker": "DOLLAR",
+        "action": "BUY",
+        "entry": 263.1,
+        "sl": 247.52,
+        "tp1": 278.68,
+        "tp2": 294.26,
+        "tp3": 309.84,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-06-28 16:04:15"
+    }
+]
