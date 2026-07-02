@@ -108,23 +108,33 @@ def scan_stock(ticker):
         in_zone = fib_618 <= today['Close'] <= fib_382
         crossover = (today['EMA9'] > today['EMA21']) and (yesterday['EMA9'] <= yesterday['EMA21'])
 
-        if in_zone and crossover: 
-            entry = float(today['Close'])
-            sl = entry - (float(today['ATR']) * 2.0)
-            risk = entry - sl
-            
-            return {
-                "ticker": ticker.replace(".NS", ""),
-                "action": "BUY",
-                "entry": round(entry, 2),
-                "sl": round(sl, 2),
-                "tp1": round(entry + (risk * 1.0), 2),
-                "tp2": round(entry + (risk * 2.0), 2),
-                "tp3": round(entry + (risk * 3.0), 2),
-                "aligned": aligned_text,
-                "plan": plan_text,
-                "time_received": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            }
+        # 6. Dynamic Signal Categorization (Replaces the generic "BUY")
+        if in_zone and crossover:
+            signal_text = "🟢 BUY TRIGGERED"
+        elif in_zone and not crossover:
+            signal_text = "🔵 IN BUY ZONE"
+        elif crossover and not in_zone:
+            signal_text = "🟡 WAIT FOR BUY ZONE"
+        else:
+            signal_text = "⚪ FORMING"
+
+        entry = float(today['Close'])
+        sl = entry - (float(today['ATR']) * 2.0)
+        risk = entry - sl
+        
+        # Always return the status so the dashboard tracks the whole watchlist
+        return {
+            "ticker": ticker.replace(".NS", ""),
+            "action": signal_text, 
+            "entry": round(entry, 2),
+            "sl": round(sl, 2),
+            "tp1": round(entry + (risk * 1.0), 2),
+            "tp2": round(entry + (risk * 2.0), 2),
+            "tp3": round(entry + (risk * 3.0), 2),
+            "aligned": aligned_text,
+            "plan": plan_text,
+            "time_received": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }
             
     except Exception as e:
         print(f"Error analyzing {ticker}: {e}")
@@ -138,12 +148,17 @@ def run_screener():
         print("❌ Watchlist is empty or could not be loaded. Exiting scan.")
         return
 
-    if not os.path.exists(DATA_FILE):
-        with open(DATA_FILE, "w") as f:
-            json.dump([], f)
-            
-    with open(DATA_FILE, "r") as f:
-        existing_alerts = json.load(f)
+    # Load existing alerts into a dictionary so we can overwrite old statuses
+    existing_alerts = []
+    if os.path.exists(DATA_FILE):
+        with open(DATA_FILE, "r") as f:
+            try:
+                existing_alerts = json.load(f)
+            except:
+                existing_alerts = []
+                
+    # Convert list to a dictionary keyed by ticker
+    alerts_dict = {a['ticker']: a for a in existing_alerts}
         
     found_setups = 0
     
@@ -152,27 +167,22 @@ def run_screener():
         setup = scan_stock(ticker)
         
         if setup:
-            already_logged = any(
-                a['ticker'] == setup['ticker'] and 
-                a['time_received'].split()[0] == setup['time_received'].split()[0] 
-                for a in existing_alerts
-            )
-            
-            if not already_logged:
-                existing_alerts.insert(0, setup)
-                found_setups += 1
-                print(f"🎯 MATCH: {setup['ticker']} ({setup['aligned']})")
+            # Overwrite the old status with today's fresh status
+            alerts_dict[setup['ticker']] = setup
+            found_setups += 1
+            print(f"   -> {setup['ticker']}: {setup['action']}")
                 
         # 🛡️ THE DELAY: Sleep for 1.5 seconds before scanning the next stock to prevent bans
         time.sleep(1.5)
 
     if found_setups > 0:
+        # Save back to JSON, sorted alphabetically by ticker
+        final_list = sorted(list(alerts_dict.values()), key=lambda x: x['ticker'])
         with open(DATA_FILE, "w") as f:
-            json.dump(existing_alerts, f, indent=4)
-        print(f"✅ Scan complete. {found_setups} new setups pushed to Dashboard.")
+            json.dump(final_list, f, indent=4)
+        print(f"✅ Scan complete. Dashboard updated with {found_setups} stocks.")
     else:
         print("✅ Scan complete. No active setups found today.")
 
 if __name__ == "__main__":
     run_screener()
-            
