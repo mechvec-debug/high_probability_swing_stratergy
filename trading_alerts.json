@@ -1,5 +1,65 @@
 [
     {
+        "ticker": "SHYAMMETL",
+        "action": "BUY",
+        "entry": 962.35,
+        "sl": 914.86,
+        "tp1": 1009.84,
+        "tp2": 1057.34,
+        "tp3": 1104.83,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "BUY pullbacks",
+        "time_received": "2026-07-02 12:36:17"
+    },
+    {
+        "ticker": "PRAJIND",
+        "action": "BUY",
+        "entry": 359.9,
+        "sl": 341.39,
+        "tp1": 378.41,
+        "tp2": 396.91,
+        "tp3": 415.42,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-07-02 12:34:20"
+    },
+    {
+        "ticker": "NEWGEN",
+        "action": "BUY",
+        "entry": 480.9,
+        "sl": 451.81,
+        "tp1": 509.99,
+        "tp2": 539.09,
+        "tp3": 568.18,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-07-02 12:32:49"
+    },
+    {
+        "ticker": "KRSNAA",
+        "action": "BUY",
+        "entry": 572.9,
+        "sl": 546.23,
+        "tp1": 599.57,
+        "tp2": 626.24,
+        "tp3": 652.91,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-07-02 12:30:53"
+    },
+    {
+        "ticker": "ARE&M",
+        "action": "BUY",
+        "entry": 862.75,
+        "sl": 820.48,
+        "tp1": 905.02,
+        "tp2": 947.29,
+        "tp3": 989.56,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-07-02 12:22:08"
+    },
+    {
         "ticker": "SHAILY",
         "action": "BUY",
         "entry": 2895.5,
