@@ -63,7 +63,7 @@ def calculate_atr(df, period=14):
 def scan_stock(ticker):
     try:
         # Pass the disguised session into yfinance
-        df = yf.download(ticker, period="2y", progress=False, session=session)
+        df = yf.download(ticker, period="max", progress=False, session=session)
         if df.empty or len(df) < 30: 
             return None
 
