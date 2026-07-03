@@ -4,7 +4,7 @@ import numpy as np
 import json
 import os
 import time
-import requests # Added to create our browser disguise
+import requests
 from datetime import datetime
 
 DATA_FILE = "trading_alerts.json"
@@ -13,7 +13,6 @@ CSV_FILE = "watchlist.csv"
 # ═══════════════════════════════════════════════════════════════════════
 # STEALTH CONFIGURATION
 # ═══════════════════════════════════════════════════════════════════════
-# This makes Yahoo Finance think we are a standard Google Chrome browser
 session = requests.Session()
 session.headers.update({
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -62,8 +61,8 @@ def calculate_atr(df, period=14):
 
 def scan_stock(ticker):
     try:
-        # Pass the disguised session into yfinance
-        df = yf.download(ticker, period="max", progress=False, session=session)
+        # ADDED auto_adjust=True: This fixes AARTIIND and any other stock with splits/demergers
+        df = yf.download(ticker, period="max", progress=False, session=session, auto_adjust=True)
         if df.empty or len(df) < 30: 
             return None
 
@@ -108,7 +107,7 @@ def scan_stock(ticker):
         in_zone = fib_618 <= today['Close'] <= fib_382
         crossover = (today['EMA9'] > today['EMA21']) and (yesterday['EMA9'] <= yesterday['EMA21'])
 
-        # 6. Dynamic Signal Categorization (Replaces the generic "BUY")
+        # Dynamic Signal Categorization
         if in_zone and crossover:
             signal_text = "🟢 BUY TRIGGERED"
         elif in_zone and not crossover:
@@ -122,7 +121,6 @@ def scan_stock(ticker):
         sl = entry - (float(today['ATR']) * 2.0)
         risk = entry - sl
         
-        # Always return the status so the dashboard tracks the whole watchlist
         return {
             "ticker": ticker.replace(".NS", ""),
             "action": signal_text, 
@@ -148,7 +146,7 @@ def run_screener():
         print("❌ Watchlist is empty or could not be loaded. Exiting scan.")
         return
 
-    # Load existing alerts into a dictionary so we can overwrite old statuses
+    # Load existing alerts to dictionary
     existing_alerts = []
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r") as f:
@@ -157,32 +155,34 @@ def run_screener():
             except:
                 existing_alerts = []
                 
-    # Convert list to a dictionary keyed by ticker
     alerts_dict = {a['ticker']: a for a in existing_alerts}
-        
     found_setups = 0
     
     for ticker in watchlist:
-        print(f"Scanning {ticker}...")
         setup = scan_stock(ticker)
         
         if setup:
-            # Overwrite the old status with today's fresh status
-            alerts_dict[setup['ticker']] = setup
-            found_setups += 1
-            print(f"   -> {setup['ticker']}: {setup['action']}")
+            # ─────────────────────────────────────────────────────────────
+            # THE DASHBOARD FILTER LOGIC
+            # ─────────────────────────────────────────────────────────────
+            if setup['action'] == "⚪ FORMING":
+                # If it's forming, we delete it from the dashboard if it was there previously
+                if setup['ticker'] in alerts_dict:
+                    del alerts_dict[setup['ticker']]
+            else:
+                # If it's actionable (Buy, In Zone, or Wait for Zone), add/update it!
+                alerts_dict[setup['ticker']] = setup
+                found_setups += 1
+                print(f"   -> {setup['ticker']}: {setup['action']}")
                 
-        # 🛡️ THE DELAY: Sleep for 1.5 seconds before scanning the next stock to prevent bans
         time.sleep(1.5)
 
-    if found_setups > 0:
-        # Save back to JSON, sorted alphabetically by ticker
-        final_list = sorted(list(alerts_dict.values()), key=lambda x: x['ticker'])
-        with open(DATA_FILE, "w") as f:
-            json.dump(final_list, f, indent=4)
-        print(f"✅ Scan complete. Dashboard updated with {found_setups} stocks.")
-    else:
-        print("✅ Scan complete. No active setups found today.")
+    # Save only the active, filtered setups back to the JSON file
+    final_list = sorted(list(alerts_dict.values()), key=lambda x: x['ticker'])
+    with open(DATA_FILE, "w") as f:
+        json.dump(final_list, f, indent=4)
+        
+    print(f"✅ Scan complete. Dashboard currently tracking {len(final_list)} active setups.")
 
 if __name__ == "__main__":
     run_screener()
