@@ -61,9 +61,8 @@ def calculate_atr(df, period=14):
 
 def scan_stock(ticker):
     try:
-        # ADDED auto_adjust=True: This fixes AARTIIND and any other stock with splits/demergers
         df = yf.download(ticker, period="max", progress=False, session=session, auto_adjust=True)
-        if df.empty or len(df) < 30: 
+        if df.empty or len(df) < 40: 
             return None
 
         if isinstance(df.columns, pd.MultiIndex):
@@ -72,6 +71,9 @@ def scan_stock(ticker):
         df['EMA9'] = df['Close'].ewm(span=9, adjust=False).mean()
         df['EMA21'] = df['Close'].ewm(span=21, adjust=False).mean()
         df['ATR'] = calculate_atr(df, 14)
+
+        # Evaluate the Daily Trend for Trade Plan Conviction
+        daily_bull = df['EMA9'].iloc[-1] > df['EMA21'].iloc[-1]
 
         df_wk = df['Close'].resample('W-SUN').last().to_frame()
         df_wk['EMA9'] = df_wk['Close'].ewm(span=9, adjust=False).mean()
@@ -83,9 +85,12 @@ def scan_stock(ticker):
         df_mo['EMA21'] = df_mo['Close'].ewm(span=21, adjust=False).mean()
         mo_bull = df_mo['EMA9'].iloc[-1] > df_mo['EMA21'].iloc[-1]
 
+        # ─────────────────────────────────────────────────────────────
+        # IMPROVED MTF HUD LOGIC (Matches TV EXACTLY)
+        # ─────────────────────────────────────────────────────────────
         if wk_bull and mo_bull:
             aligned_text = "ALIGNED ▲ LONGS"
-            plan_text = "BUY pullbacks"
+            plan_text = "BUY pullbacks" if daily_bull else "low conviction — wait"
         elif wk_bull or mo_bull:
             aligned_text = "MIXED — WEAK EDGE"
             plan_text = "CAUTION: Low Conviction"
@@ -93,7 +98,10 @@ def scan_stock(ticker):
             aligned_text = "ALIGNED ▼ SHORTS"
             plan_text = "AVOID: Macro Downtrend"
 
-        recent_data = df.tail(30)
+        # ─────────────────────────────────────────────────────────────
+        # REVERTED TO CORE CRITERIA (30-Day Recent Swing)
+        # ─────────────────────────────────────────────────────────────
+        recent_data = df.tail(30) 
         impulse_high = recent_data['High'].max()
         impulse_low = recent_data['Low'].min()
         
@@ -107,7 +115,7 @@ def scan_stock(ticker):
         in_zone = fib_618 <= today['Close'] <= fib_382
         crossover = (today['EMA9'] > today['EMA21']) and (yesterday['EMA9'] <= yesterday['EMA21'])
 
-        # Dynamic Signal Categorization
+        # Core Signal Categorization
         if in_zone and crossover:
             signal_text = "🟢 BUY TRIGGERED"
         elif in_zone and not crossover:
@@ -146,7 +154,6 @@ def run_screener():
         print("❌ Watchlist is empty or could not be loaded. Exiting scan.")
         return
 
-    # Load existing alerts to dictionary
     existing_alerts = []
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r") as f:
@@ -163,21 +170,20 @@ def run_screener():
         
         if setup:
             # ─────────────────────────────────────────────────────────────
-            # THE DASHBOARD FILTER LOGIC
+            # STRICT FILTER LOGIC: Buy Zone / Wait for Buy Zone
             # ─────────────────────────────────────────────────────────────
-            if setup['action'] == "⚪ FORMING":
-                # If it's forming, we delete it from the dashboard if it was there previously
-                if setup['ticker'] in alerts_dict:
-                    del alerts_dict[setup['ticker']]
-            else:
-                # If it's actionable (Buy, In Zone, or Wait for Zone), add/update it!
+            if setup['action'] in ["🟢 BUY TRIGGERED", "🔵 IN BUY ZONE", "🟡 WAIT FOR BUY ZONE"]:
+                # Keep active setups
                 alerts_dict[setup['ticker']] = setup
                 found_setups += 1
                 print(f"   -> {setup['ticker']}: {setup['action']}")
+            else:
+                # Delete any stock that is just forming
+                if setup['ticker'] in alerts_dict:
+                    del alerts_dict[setup['ticker']]
                 
         time.sleep(1.5)
 
-    # Save only the active, filtered setups back to the JSON file
     final_list = sorted(list(alerts_dict.values()), key=lambda x: x['ticker'])
     with open(DATA_FILE, "w") as f:
         json.dump(final_list, f, indent=4)
