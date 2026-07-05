@@ -29,32 +29,41 @@ while True:
     if alerts:
         df = pd.DataFrame(alerts)
         
-        # Inject the date and the row count (Total scan) in red text
-        today_date = datetime.now().strftime("%d %b %Y")
-        header_placeholder.markdown(
-            f"Monitoring for EMA Crossovers inside Fibonacci Impulse Zones. &nbsp;&nbsp;&nbsp; "
-            f"<span style='color:#ff4b4b; font-weight:bold;'>Total scan ({today_date}) is {len(df)}</span>", 
-            unsafe_allow_html=True
-        )
+        # 🛡️ THE BULLETPROOF UI FILTER 🛡️
+        # Strictly hide any row that contains "FORMING" or "VOID"
+        df = df[~df['action'].str.contains("FORMING|VOID", case=False, na=False)]
         
-        with table_placeholder.container():
-            st.dataframe(
-                df,
-                column_config={
-                    "ticker": st.column_config.TextColumn("Stock", width="medium"),
-                    "action": st.column_config.TextColumn("Signal", width="small"),
-                    "entry": st.column_config.NumberColumn("Entry (₹)", format="%.2f"),
-                    "sl": st.column_config.NumberColumn("Stop Loss (₹)", format="%.2f"),
-                    "tp1": st.column_config.NumberColumn("TP1 (₹)", format="%.2f"),
-                    "tp2": st.column_config.NumberColumn("TP2 (₹)", format="%.2f"),
-                    "tp3": st.column_config.NumberColumn("TP3 (₹)", format="%.2f"),
-                    "aligned": st.column_config.TextColumn("MTF Alignment", width="medium"),
-                    "plan": st.column_config.TextColumn("Trade Plan", width="medium"),
-                    "time_received": st.column_config.DatetimeColumn("Trigger Time", format="D MMM YYYY, h:mm a")
-                },
-                hide_index=True,
-                use_container_width=True
+        if not df.empty:
+            # Inject the date and the true active row count in red text
+            today_date = datetime.now().strftime("%d %b %Y")
+            header_placeholder.markdown(
+                f"Monitoring for EMA Crossovers inside Fibonacci Impulse Zones. &nbsp;&nbsp;&nbsp; "
+                f"<span style='color:#ff4b4b; font-weight:bold;'>Total scan ({today_date}) is {len(df)}</span>", 
+                unsafe_allow_html=True
             )
+            
+            with table_placeholder.container():
+                st.dataframe(
+                    df,
+                    column_config={
+                        "ticker": st.column_config.TextColumn("Stock", width="medium"),
+                        "action": st.column_config.TextColumn("Signal", width="small"),
+                        "entry": st.column_config.NumberColumn("Entry (₹)", format="%.2f"),
+                        "sl": st.column_config.NumberColumn("Stop Loss (₹)", format="%.2f"),
+                        "tp1": st.column_config.NumberColumn("TP1 (₹)", format="%.2f"),
+                        "tp2": st.column_config.NumberColumn("TP2 (₹)", format="%.2f"),
+                        "tp3": st.column_config.NumberColumn("TP3 (₹)", format="%.2f"),
+                        "aligned": st.column_config.TextColumn("MTF Alignment", width="medium"),
+                        "plan": st.column_config.TextColumn("Trade Plan", width="medium"),
+                        "time_received": st.column_config.DatetimeColumn("Trigger Time", format="D MMM YYYY, h:mm a")
+                    },
+                    hide_index=True,
+                    use_container_width=True
+                )
+        else:
+            header_placeholder.empty()
+            with table_placeholder.container():
+                st.info("Scan complete. No active setups found in the Buy Zone today. 📡")
     else:
         with table_placeholder.container():
             st.info("Waiting for market data... Run the Python Screener to update targets. 📡")
