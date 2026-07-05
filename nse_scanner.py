@@ -18,39 +18,41 @@ session.headers.update({
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 })
 
+
 def load_watchlist(filename=CSV_FILE):
     if not os.path.exists(filename):
         sample_df = pd.DataFrame({"Symbol": ["RELIANCE", "TATAMOTORS", "INFY", "SHAKTIPUMP"]})
         sample_df.to_csv(filename, index=False)
         return ["RELIANCE.NS", "TATAMOTORS.NS", "INFY.NS", "SHAKTIPUMP.NS"]
-    
+
     try:
         df = pd.read_csv(filename)
         if df.empty: return []
-        
+
         target_col = None
         for col in df.columns:
             if str(col).strip().lower() in ['symbol', 'ticker', 'stock', 'name']:
                 target_col = col
                 break
-        
+
         if target_col is None:
             target_col = df.columns[0]
-            
+
         raw_tickers = df[target_col].dropna().astype(str).tolist()
         processed_tickers = []
-        
+
         for ticker in raw_tickers:
             clean_ticker = ticker.strip().upper()
             if clean_ticker and not clean_ticker.startswith('#'):
                 if not clean_ticker.endswith('.NS'):
                     clean_ticker = f"{clean_ticker}.NS"
                 processed_tickers.append(clean_ticker)
-                
+
         return processed_tickers
     except Exception as e:
         print(f"❌ Error reading '{filename}': {e}")
         return []
+
 
 def calculate_atr(df, period=14):
     high_low = df['High'] - df['Low']
@@ -59,10 +61,11 @@ def calculate_atr(df, period=14):
     ranges = pd.concat([high_low, high_close, low_close], axis=1)
     return np.max(ranges, axis=1).rolling(period).mean()
 
+
 def scan_stock(ticker):
     try:
         df = yf.download(ticker, period="max", progress=False, session=session, auto_adjust=True)
-        if df.empty or len(df) < 45: 
+        if df.empty or len(df) < 45:
             return None
 
         if isinstance(df.columns, pd.MultiIndex):
@@ -97,20 +100,20 @@ def scan_stock(ticker):
         # ─────────────────────────────────────────────────────────────
         # STRICT UPWARD IMPULSE MATH (Fixes False Triggers)
         # ─────────────────────────────────────────────────────────────
-        recent_data = df.tail(45) 
-        
+        recent_data = df.tail(45)
+
         # 1. Find the Peak
         max_date = recent_data['High'].idxmax()
         impulse_high = recent_data.loc[max_date, 'High']
-        
+
         # 2. Find the Low that happened strictly BEFORE the Peak
         pre_peak_data = recent_data.loc[:max_date]
         impulse_low = pre_peak_data['Low'].min()
-        
+
         # 3. Check if structure broke after the peak
         post_peak_data = recent_data.loc[max_date:]
         structure_broken = post_peak_data['Low'].min() < impulse_low
-        
+
         today = df.iloc[-1]
         yesterday = df.iloc[-2]
 
@@ -137,10 +140,10 @@ def scan_stock(ticker):
         entry = float(today['Close'])
         sl = entry - (float(today['ATR']) * 2.0)
         risk = entry - sl
-        
+
         return {
             "ticker": ticker.replace(".NS", ""),
-            "action": signal_text, 
+            "action": signal_text,
             "entry": round(entry, 2),
             "sl": round(sl, 2),
             "tp1": round(entry + (risk * 1.0), 2),
@@ -150,14 +153,15 @@ def scan_stock(ticker):
             "plan": plan_text,
             "time_received": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         }
-            
+
     except Exception as e:
         print(f"Error analyzing {ticker}: {e}")
     return None
 
+
 def run_screener():
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting NSE Algorithmic Scan...")
-    
+
     watchlist = load_watchlist()
     if not watchlist:
         print("❌ Watchlist is empty or could not be loaded. Exiting scan.")
@@ -170,13 +174,13 @@ def run_screener():
                 existing_alerts = json.load(f)
             except:
                 existing_alerts = []
-                
+
     alerts_dict = {a['ticker']: a for a in existing_alerts}
     found_setups = 0
-    
+
     for ticker in watchlist:
         setup = scan_stock(ticker)
-        
+
         if setup:
             # ─────────────────────────────────────────────────────────────
             # STRICT FILTER LOGIC
@@ -189,15 +193,16 @@ def run_screener():
                 # If a stock falls back into 'FORMING', delete it from the JSON tracking
                 if setup['ticker'] in alerts_dict:
                     del alerts_dict[setup['ticker']]
-                
+
         time.sleep(1.5)
 
     final_list = sorted(list(alerts_dict.values()), key=lambda x: x['ticker'])
     with open(DATA_FILE, "w") as f:
         json.dump(final_list, f, indent=4)
-        
+
     today_date = datetime.now().strftime("%d %b %Y")
     print(f"✅ Scan complete. Total valid setups ({today_date}) is {len(final_list)}")
+
 
 if __name__ == "__main__":
     run_screener()
