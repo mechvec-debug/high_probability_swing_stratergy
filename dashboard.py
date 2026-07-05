@@ -10,6 +10,7 @@ st.title("🎯 High-Probability Setup Dashboard")
 
 DATA_FILE = "trading_alerts.json"
 
+
 def load_alerts():
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r") as f:
@@ -19,29 +20,33 @@ def load_alerts():
                 return []
     return []
 
+
 # Placeholders for the dynamic header and table
 header_placeholder = st.empty()
 table_placeholder = st.empty()
 
 while True:
     alerts = load_alerts()
-    
+
     if alerts:
         df = pd.DataFrame(alerts)
-        
+
         # 🛡️ THE BULLETPROOF UI FILTER 🛡️
         # Strictly hide any row that contains "FORMING" or "VOID"
         df = df[~df['action'].str.contains("FORMING|VOID", case=False, na=False)]
-        
+
+        # Drop the conflicting MTF Alignment and Trade Plan columns to keep the UI clean
+        df = df.drop(columns=['aligned', 'plan'], errors='ignore')
+
         if not df.empty:
             # Inject the date and the true active row count in red text
             today_date = datetime.now().strftime("%d %b %Y")
             header_placeholder.markdown(
                 f"Monitoring for EMA Crossovers inside Fibonacci Impulse Zones. &nbsp;&nbsp;&nbsp; "
-                f"<span style='color:#ff4b4b; font-weight:bold;'>Total scan ({today_date}) is {len(df)}</span>", 
+                f"<span style='color:#ff4b4b; font-weight:bold;'>Total scan ({today_date}) is {len(df)}</span>",
                 unsafe_allow_html=True
             )
-            
+
             with table_placeholder.container():
                 st.dataframe(
                     df,
@@ -53,8 +58,6 @@ while True:
                         "tp1": st.column_config.NumberColumn("TP1 (₹)", format="%.2f"),
                         "tp2": st.column_config.NumberColumn("TP2 (₹)", format="%.2f"),
                         "tp3": st.column_config.NumberColumn("TP3 (₹)", format="%.2f"),
-                        "aligned": st.column_config.TextColumn("MTF Alignment", width="medium"),
-                        "plan": st.column_config.TextColumn("Trade Plan", width="medium"),
                         "time_received": st.column_config.DatetimeColumn("Trigger Time", format="D MMM YYYY, h:mm a")
                     },
                     hide_index=True,
@@ -67,5 +70,5 @@ while True:
     else:
         with table_placeholder.container():
             st.info("Waiting for market data... Run the Python Screener to update targets. 📡")
-            
+
     time.sleep(5)
