@@ -62,7 +62,7 @@ def calculate_atr(df, period=14):
 def scan_stock(ticker):
     try:
         df = yf.download(ticker, period="max", progress=False, session=session, auto_adjust=True)
-        if df.empty or len(df) < 40: 
+        if df.empty or len(df) < 45: 
             return None
 
         if isinstance(df.columns, pd.MultiIndex):
@@ -72,7 +72,6 @@ def scan_stock(ticker):
         df['EMA21'] = df['Close'].ewm(span=21, adjust=False).mean()
         df['ATR'] = calculate_atr(df, 14)
 
-        # Evaluate the Daily Trend for Trade Plan Conviction
         daily_bull = df['EMA9'].iloc[-1] > df['EMA21'].iloc[-1]
 
         df_wk = df['Close'].resample('W-SUN').last().to_frame()
@@ -85,9 +84,6 @@ def scan_stock(ticker):
         df_mo['EMA21'] = df_mo['Close'].ewm(span=21, adjust=False).mean()
         mo_bull = df_mo['EMA9'].iloc[-1] > df_mo['EMA21'].iloc[-1]
 
-        # ─────────────────────────────────────────────────────────────
-        # IMPROVED MTF HUD LOGIC (Matches TV EXACTLY)
-        # ─────────────────────────────────────────────────────────────
         if wk_bull and mo_bull:
             aligned_text = "ALIGNED ▲ LONGS"
             plan_text = "BUY pullbacks" if daily_bull else "low conviction — wait"
@@ -99,31 +95,44 @@ def scan_stock(ticker):
             plan_text = "AVOID: Macro Downtrend"
 
         # ─────────────────────────────────────────────────────────────
-        # REVERTED TO CORE CRITERIA (30-Day Recent Swing)
+        # STRICT UPWARD IMPULSE MATH (Fixes False Triggers)
         # ─────────────────────────────────────────────────────────────
-        recent_data = df.tail(30) 
-        impulse_high = recent_data['High'].max()
-        impulse_low = recent_data['Low'].min()
+        recent_data = df.tail(45) 
         
-        diff = impulse_high - impulse_low
-        fib_382 = impulse_high - (diff * 0.382)
-        fib_618 = impulse_high - (diff * 0.618)
-
+        # 1. Find the Peak
+        max_date = recent_data['High'].idxmax()
+        impulse_high = recent_data.loc[max_date, 'High']
+        
+        # 2. Find the Low that happened strictly BEFORE the Peak
+        pre_peak_data = recent_data.loc[:max_date]
+        impulse_low = pre_peak_data['Low'].min()
+        
+        # 3. Check if structure broke after the peak
+        post_peak_data = recent_data.loc[max_date:]
+        structure_broken = post_peak_data['Low'].min() < impulse_low
+        
         today = df.iloc[-1]
         yesterday = df.iloc[-2]
 
-        in_zone = fib_618 <= today['Close'] <= fib_382
-        crossover = (today['EMA9'] > today['EMA21']) and (yesterday['EMA9'] <= yesterday['EMA21'])
-
-        # Core Signal Categorization
-        if in_zone and crossover:
-            signal_text = "🟢 BUY TRIGGERED"
-        elif in_zone and not crossover:
-            signal_text = "🔵 IN BUY ZONE"
-        elif crossover and not in_zone:
-            signal_text = "🟡 WAIT FOR BUY ZONE"
-        else:
+        # 4. Filter out crashing stocks, broken structures, or invalid waves
+        if impulse_high <= impulse_low or structure_broken or len(pre_peak_data) < 3:
             signal_text = "⚪ FORMING"
+        else:
+            diff = impulse_high - impulse_low
+            fib_382 = impulse_high - (diff * 0.382)
+            fib_618 = impulse_high - (diff * 0.618)
+
+            in_zone = fib_618 <= today['Close'] <= fib_382
+            crossover = (today['EMA9'] > today['EMA21']) and (yesterday['EMA9'] <= yesterday['EMA21'])
+
+            if in_zone and crossover:
+                signal_text = "🟢 BUY TRIGGERED"
+            elif in_zone and not crossover:
+                signal_text = "🔵 IN BUY ZONE"
+            elif crossover and not in_zone:
+                signal_text = "🟡 WAIT FOR BUY ZONE"
+            else:
+                signal_text = "⚪ FORMING"
 
         entry = float(today['Close'])
         sl = entry - (float(today['ATR']) * 2.0)
@@ -170,15 +179,14 @@ def run_screener():
         
         if setup:
             # ─────────────────────────────────────────────────────────────
-            # STRICT FILTER LOGIC: Buy Zone / Wait for Buy Zone
+            # STRICT FILTER LOGIC
             # ─────────────────────────────────────────────────────────────
             if setup['action'] in ["🟢 BUY TRIGGERED", "🔵 IN BUY ZONE", "🟡 WAIT FOR BUY ZONE"]:
-                # Keep active setups
                 alerts_dict[setup['ticker']] = setup
                 found_setups += 1
                 print(f"   -> {setup['ticker']}: {setup['action']}")
             else:
-                # Delete any stock that is just forming
+                # If a stock falls back into 'FORMING', delete it from the JSON tracking
                 if setup['ticker'] in alerts_dict:
                     del alerts_dict[setup['ticker']]
                 
@@ -188,7 +196,8 @@ def run_screener():
     with open(DATA_FILE, "w") as f:
         json.dump(final_list, f, indent=4)
         
-    print(f"✅ Scan complete. Dashboard currently tracking {len(final_list)} active setups.")
+    today_date = datetime.now().strftime("%d %b %Y")
+    print(f"✅ Scan complete. Total valid setups ({today_date}) is {len(final_list)}")
 
 if __name__ == "__main__":
     run_screener()
