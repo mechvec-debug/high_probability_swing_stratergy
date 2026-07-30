@@ -108,6 +108,18 @@
         "time_received": "2026-07-03 12:20:08"
     },
     {
+        "ticker": "AIAENG",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 4563.5,
+        "sl": 4324.0,
+        "tp1": 4803.0,
+        "tp2": 5042.5,
+        "tp3": 5282.0,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-07-30 12:03:12"
+    },
+    {
         "ticker": "AJAXENGG",
         "action": "\u26aa FORMING",
         "entry": 540.9,
@@ -134,14 +146,14 @@
     {
         "ticker": "ALKYLAMINE",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1817.3,
-        "sl": 1692.07,
-        "tp1": 1942.53,
-        "tp2": 2067.76,
-        "tp3": 2192.99,
+        "entry": 1787.2,
+        "sl": 1666.6,
+        "tp1": 1907.8,
+        "tp2": 2028.4,
+        "tp3": 2149.0,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:18:40"
+        "time_received": "2026-07-30 12:03:19"
     },
     {
         "ticker": "ALLCARGO",
@@ -385,27 +397,27 @@
     },
     {
         "ticker": "BERGEPAINT",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 520.05,
-        "sl": 493.98,
-        "tp1": 546.12,
-        "tp2": 572.19,
-        "tp3": 598.26,
+        "action": "\ud83d\udfe2 BUY TRIGGERED",
+        "entry": 521.35,
+        "sl": 494.59,
+        "tp1": 548.11,
+        "tp2": 574.86,
+        "tp3": 601.62,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:19:42"
+        "time_received": "2026-07-30 12:04:16"
     },
     {
         "ticker": "BHEL",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 405.15,
-        "sl": 374.2,
-        "tp1": 436.1,
-        "tp2": 467.06,
-        "tp3": 498.01,
+        "entry": 403.0,
+        "sl": 373.18,
+        "tp1": 432.82,
+        "tp2": 462.65,
+        "tp3": 492.47,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-07-29 12:19:48"
+        "time_received": "2026-07-30 12:04:21"
     },
     {
         "ticker": "BIRLACORPN",
@@ -470,14 +482,14 @@
     {
         "ticker": "CEATLTD",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 3433.8,
-        "sl": 3202.39,
-        "tp1": 3665.21,
-        "tp2": 3896.63,
-        "tp3": 4128.04,
+        "entry": 3464.0,
+        "sl": 3238.41,
+        "tp1": 3689.59,
+        "tp2": 3915.17,
+        "tp3": 4140.76,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:20:15"
+        "time_received": "2026-07-30 12:04:46"
     },
     {
         "ticker": "CEIGALL",
@@ -516,16 +528,28 @@
         "time_received": "2026-07-03 12:22:51"
     },
     {
-        "ticker": "CHAMBLFERT",
+        "ticker": "CERA",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 451.45,
-        "sl": 434.16,
-        "tp1": 468.74,
-        "tp2": 486.02,
-        "tp3": 503.31,
-        "aligned": "ALIGNED \u25bc SHORTS",
-        "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-07-29 12:20:27"
+        "entry": 6117.0,
+        "sl": 5778.5,
+        "tp1": 6455.5,
+        "tp2": 6794.0,
+        "tp3": 7132.5,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-07-30 12:04:50"
+    },
+    {
+        "ticker": "CHALET",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 805.0,
+        "sl": 756.21,
+        "tp1": 853.79,
+        "tp2": 902.57,
+        "tp3": 951.36,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-07-30 12:04:55"
     },
     {
         "ticker": "CIEINDIA",
@@ -540,18 +564,6 @@
         "time_received": "2026-07-03 12:23:05"
     },
     {
-        "ticker": "CIPLA",
-        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
-        "entry": 1474.3,
-        "sl": 1405.43,
-        "tp1": 1543.17,
-        "tp2": 1612.04,
-        "tp3": 1680.91,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "BUY pullbacks",
-        "time_received": "2026-07-29 12:20:31"
-    },
-    {
         "ticker": "CMSINFO",
         "action": "\u26aa FORMING",
         "entry": 274.55,
@@ -562,6 +574,30 @@
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
         "time_received": "2026-07-03 12:23:13"
+    },
+    {
+        "ticker": "COLPAL",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 2084.8,
+        "sl": 1972.13,
+        "tp1": 2197.47,
+        "tp2": 2310.14,
+        "tp3": 2422.81,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-07-30 12:05:11"
+    },
+    {
+        "ticker": "CONCORDBIO",
+        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
+        "entry": 1330.0,
+        "sl": 1244.27,
+        "tp1": 1415.73,
+        "tp2": 1501.45,
+        "tp3": 1587.18,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-07-30 12:05:15"
     },
     {
         "ticker": "CYIENTDLM",
@@ -614,14 +650,14 @@
     {
         "ticker": "DELHIVERY",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 470.0,
-        "sl": 445.07,
-        "tp1": 494.93,
-        "tp2": 519.86,
-        "tp3": 544.79,
+        "entry": 468.3,
+        "sl": 443.84,
+        "tp1": 492.76,
+        "tp2": 517.21,
+        "tp3": 541.67,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:21:09"
+        "time_received": "2026-07-30 12:05:36"
     },
     {
         "ticker": "DIACABS",
@@ -646,6 +682,18 @@
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
         "time_received": "2026-07-03 12:24:13"
+    },
+    {
+        "ticker": "DOMS",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 2255.0,
+        "sl": 2152.49,
+        "tp1": 2357.51,
+        "tp2": 2460.03,
+        "tp3": 2562.54,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-07-30 12:05:46"
     },
     {
         "ticker": "DYNAMATECH",
@@ -710,14 +758,14 @@
     {
         "ticker": "ELGIEQUIP",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 577.15,
-        "sl": 544.72,
-        "tp1": 609.58,
-        "tp2": 642.02,
-        "tp3": 674.45,
+        "entry": 569.15,
+        "sl": 538.49,
+        "tp1": 599.81,
+        "tp2": 630.48,
+        "tp3": 661.14,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:21:34"
+        "time_received": "2026-07-30 12:05:59"
     },
     {
         "ticker": "EMBDL",
@@ -766,18 +814,6 @@
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
         "time_received": "2026-07-03 12:25:00"
-    },
-    {
-        "ticker": "ERIS",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1426.5,
-        "sl": 1342.69,
-        "tp1": 1510.31,
-        "tp2": 1594.13,
-        "tp3": 1677.94,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:21:45"
     },
     {
         "ticker": "ETHOSLTD",
@@ -842,14 +878,14 @@
     {
         "ticker": "FORTIS",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 952.05,
-        "sl": 917.33,
-        "tp1": 986.77,
-        "tp2": 1021.5,
-        "tp3": 1056.22,
+        "entry": 948.85,
+        "sl": 915.64,
+        "tp1": 982.06,
+        "tp2": 1015.27,
+        "tp3": 1048.49,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:22:04"
+        "time_received": "2026-07-30 12:06:27"
     },
     {
         "ticker": "GAEL",
@@ -948,6 +984,18 @@
         "time_received": "2026-07-03 12:26:10"
     },
     {
+        "ticker": "GMRAIRPORT",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 103.91,
+        "sl": 99.06,
+        "tp1": 108.76,
+        "tp2": 113.61,
+        "tp3": 118.46,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-07-30 12:06:43"
+    },
+    {
         "ticker": "GMRP&UI",
         "action": "\u26aa FORMING",
         "entry": 99.95,
@@ -982,6 +1030,30 @@
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
         "time_received": "2026-07-03 12:26:31"
+    },
+    {
+        "ticker": "GRANULES",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 833.95,
+        "sl": 779.88,
+        "tp1": 888.02,
+        "tp2": 942.09,
+        "tp3": 996.17,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "BUY pullbacks",
+        "time_received": "2026-07-30 12:06:56"
+    },
+    {
+        "ticker": "GRASIM",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 3104.8,
+        "sl": 2998.23,
+        "tp1": 3211.37,
+        "tp2": 3317.94,
+        "tp3": 3424.51,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-07-30 12:06:59"
     },
     {
         "ticker": "GREAVESCOT",
@@ -1032,6 +1104,18 @@
         "time_received": "2026-07-03 12:26:54"
     },
     {
+        "ticker": "HAPPSTMNDS",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 380.45,
+        "sl": 345.74,
+        "tp1": 415.16,
+        "tp2": 449.86,
+        "tp3": 484.57,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-07-30 12:07:10"
+    },
+    {
         "ticker": "HCC",
         "action": "\ud83d\udd35 IN BUY ZONE",
         "entry": 24.83,
@@ -1080,6 +1164,18 @@
         "time_received": "2026-07-03 12:27:17"
     },
     {
+        "ticker": "HFCL",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 184.69,
+        "sl": 162.36,
+        "tp1": 207.02,
+        "tp2": 229.35,
+        "tp3": 251.68,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-07-30 12:07:22"
+    },
+    {
         "ticker": "HGINFRA",
         "action": "\ud83d\udd35 IN BUY ZONE",
         "entry": 571.8,
@@ -1106,26 +1202,14 @@
     {
         "ticker": "HINDPETRO",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 392.75,
-        "sl": 370.75,
-        "tp1": 414.75,
-        "tp2": 436.75,
-        "tp3": 458.75,
+        "entry": 388.45,
+        "sl": 366.4,
+        "tp1": 410.5,
+        "tp2": 432.55,
+        "tp3": 454.6,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:23:11"
-    },
-    {
-        "ticker": "HONAUT",
-        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
-        "entry": 40105.0,
-        "sl": 38142.37,
-        "tp1": 42067.63,
-        "tp2": 44030.26,
-        "tp3": 45992.89,
-        "aligned": "MIXED \u2014 WEAK EDGE",
-        "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:23:19"
+        "time_received": "2026-07-30 12:07:28"
     },
     {
         "ticker": "ICIL",
@@ -1154,14 +1238,14 @@
     {
         "ticker": "IGIL",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 347.0,
-        "sl": 325.12,
-        "tp1": 368.88,
-        "tp2": 390.76,
-        "tp3": 412.64,
+        "entry": 345.45,
+        "sl": 321.94,
+        "tp1": 368.96,
+        "tp2": 392.48,
+        "tp3": 415.99,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:23:24"
+        "time_received": "2026-07-30 12:07:40"
     },
     {
         "ticker": "IMAGICAA",
@@ -1236,6 +1320,18 @@
         "time_received": "2026-07-03 12:28:18"
     },
     {
+        "ticker": "IOC",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 139.94,
+        "sl": 134.28,
+        "tp1": 145.6,
+        "tp2": 151.25,
+        "tp3": 156.91,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-07-30 12:08:01"
+    },
+    {
         "ticker": "IONEXCHANG",
         "action": "\u26aa FORMING",
         "entry": 418.35,
@@ -1246,6 +1342,18 @@
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
         "time_received": "2026-07-03 12:28:27"
+    },
+    {
+        "ticker": "IPCALAB",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 1758.8,
+        "sl": 1636.01,
+        "tp1": 1881.59,
+        "tp2": 2004.37,
+        "tp3": 2127.16,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "BUY pullbacks",
+        "time_received": "2026-07-30 12:08:02"
     },
     {
         "ticker": "IPL",
@@ -1298,14 +1406,14 @@
     {
         "ticker": "JBMA",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 676.0,
-        "sl": 641.99,
-        "tp1": 710.01,
-        "tp2": 744.03,
-        "tp3": 778.04,
+        "entry": 678.45,
+        "sl": 644.74,
+        "tp1": 712.16,
+        "tp2": 745.88,
+        "tp3": 779.59,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:24:00"
+        "time_received": "2026-07-30 12:08:13"
     },
     {
         "ticker": "JINDWORLD",
@@ -1368,30 +1476,6 @@
         "time_received": "2026-07-03 12:29:09"
     },
     {
-        "ticker": "JSWINFRA",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 316.55,
-        "sl": 293.81,
-        "tp1": 339.29,
-        "tp2": 362.02,
-        "tp3": 384.76,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:24:15"
-    },
-    {
-        "ticker": "JUBLPHARMA",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 977.4,
-        "sl": 923.1,
-        "tp1": 1031.7,
-        "tp2": 1086.01,
-        "tp3": 1140.31,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:24:23"
-    },
-    {
         "ticker": "JUSTDIAL",
         "action": "\u26aa FORMING",
         "entry": 549.85,
@@ -1406,26 +1490,26 @@
     {
         "ticker": "KIRLOSBROS",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1854.7,
-        "sl": 1739.73,
-        "tp1": 1969.67,
-        "tp2": 2084.65,
-        "tp3": 2199.62,
+        "entry": 1873.3,
+        "sl": 1749.5,
+        "tp1": 1997.1,
+        "tp2": 2120.91,
+        "tp3": 2244.71,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:24:40"
+        "time_received": "2026-07-30 12:08:48"
     },
     {
         "ticker": "KIRLOSENG",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 2180.9,
-        "sl": 1986.5,
-        "tp1": 2375.3,
-        "tp2": 2569.7,
-        "tp3": 2764.1,
+        "entry": 2132.9,
+        "sl": 1937.39,
+        "tp1": 2328.41,
+        "tp2": 2523.93,
+        "tp3": 2719.44,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:24:42"
+        "time_received": "2026-07-30 12:08:50"
     },
     {
         "ticker": "KIRLPNU",
@@ -1476,30 +1560,6 @@
         "time_received": "2026-07-03 12:29:55"
     },
     {
-        "ticker": "KPIL",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1303.4,
-        "sl": 1232.71,
-        "tp1": 1374.09,
-        "tp2": 1444.77,
-        "tp3": 1515.46,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:24:44"
-    },
-    {
-        "ticker": "KPRMILL",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1060.5,
-        "sl": 984.45,
-        "tp1": 1136.55,
-        "tp2": 1212.61,
-        "tp3": 1288.66,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:24:48"
-    },
-    {
         "ticker": "KRBL",
         "action": "\u26aa FORMING",
         "entry": 375.5,
@@ -1526,14 +1586,14 @@
     {
         "ticker": "KSB",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 842.6,
-        "sl": 786.14,
-        "tp1": 899.06,
-        "tp2": 955.53,
-        "tp3": 1011.99,
+        "entry": 847.55,
+        "sl": 790.93,
+        "tp1": 904.17,
+        "tp2": 960.79,
+        "tp3": 1017.41,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:24:50"
+        "time_received": "2026-07-30 12:08:57"
     },
     {
         "ticker": "KSCL",
@@ -1632,18 +1692,6 @@
         "time_received": "2026-07-03 12:31:00"
     },
     {
-        "ticker": "MARUTI",
-        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
-        "entry": 13948.0,
-        "sl": 13425.0,
-        "tp1": 14471.0,
-        "tp2": 14994.0,
-        "tp3": 15517.0,
-        "aligned": "MIXED \u2014 WEAK EDGE",
-        "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:25:26"
-    },
-    {
         "ticker": "MASTEK",
         "action": "\u26aa FORMING",
         "entry": 1621.3,
@@ -1680,6 +1728,18 @@
         "time_received": "2026-07-03 12:31:22"
     },
     {
+        "ticker": "MGL",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 1118.5,
+        "sl": 1057.13,
+        "tp1": 1179.87,
+        "tp2": 1241.24,
+        "tp3": 1302.61,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-07-30 12:09:37"
+    },
+    {
         "ticker": "MIDHANI",
         "action": "\ud83d\udfe2 BUY TRIGGERED",
         "entry": 427.85,
@@ -1706,14 +1766,14 @@
     {
         "ticker": "MRPL",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 163.41,
-        "sl": 144.76,
-        "tp1": 182.06,
-        "tp2": 200.7,
-        "tp3": 219.35,
+        "entry": 166.84,
+        "sl": 148.25,
+        "tp1": 185.43,
+        "tp2": 204.01,
+        "tp3": 222.6,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:25:44"
+        "time_received": "2026-07-30 12:09:46"
     },
     {
         "ticker": "MSTCLTD",
@@ -1740,6 +1800,18 @@
         "time_received": "2026-07-03 12:31:44"
     },
     {
+        "ticker": "NAVINFLUOR",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 7386.5,
+        "sl": 7003.5,
+        "tp1": 7769.5,
+        "tp2": 8152.5,
+        "tp3": 8535.5,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-07-30 12:09:56"
+    },
+    {
         "ticker": "NEOGEN",
         "action": "\u26aa FORMING",
         "entry": 1968.3,
@@ -1764,18 +1836,6 @@
         "time_received": "2026-07-03 12:32:01"
     },
     {
-        "ticker": "NETWEB",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 4364.1,
-        "sl": 4065.29,
-        "tp1": 4662.91,
-        "tp2": 4961.73,
-        "tp3": 5260.54,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:26:03"
-    },
-    {
         "ticker": "NFL",
         "action": "\ud83d\udd35 IN BUY ZONE",
         "entry": 75.63,
@@ -1788,28 +1848,40 @@
         "time_received": "2026-07-03 12:32:10"
     },
     {
+        "ticker": "NHPC",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 78.07,
+        "sl": 74.92,
+        "tp1": 81.22,
+        "tp2": 84.36,
+        "tp3": 87.51,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-07-30 12:10:21"
+    },
+    {
         "ticker": "NUVOCO",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 351.75,
-        "sl": 312.18,
-        "tp1": 391.32,
-        "tp2": 430.89,
-        "tp3": 470.46,
+        "entry": 349.2,
+        "sl": 311.19,
+        "tp1": 387.21,
+        "tp2": 425.21,
+        "tp3": 463.22,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:26:20"
+        "time_received": "2026-07-30 12:10:29"
     },
     {
         "ticker": "OLECTRA",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1330.1,
-        "sl": 1259.43,
-        "tp1": 1400.77,
-        "tp2": 1471.44,
-        "tp3": 1542.11,
+        "entry": 1327.0,
+        "sl": 1262.19,
+        "tp1": 1391.81,
+        "tp2": 1456.63,
+        "tp3": 1521.44,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:26:27"
+        "time_received": "2026-07-30 12:10:36"
     },
     {
         "ticker": "OPTIEMUS",
@@ -1861,15 +1933,15 @@
     },
     {
         "ticker": "PAGEIND",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 40270.0,
-        "sl": 38562.14,
-        "tp1": 41977.86,
-        "tp2": 43685.71,
-        "tp3": 45393.57,
+        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
+        "entry": 41085.0,
+        "sl": 39395.71,
+        "tp1": 42774.29,
+        "tp2": 44463.57,
+        "tp3": 46152.86,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:26:33"
+        "time_received": "2026-07-30 12:10:41"
     },
     {
         "ticker": "PARADEEP",
@@ -1908,6 +1980,18 @@
         "time_received": "2026-07-03 12:32:58"
     },
     {
+        "ticker": "PCBL",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 328.0,
+        "sl": 293.51,
+        "tp1": 362.49,
+        "tp2": 396.97,
+        "tp3": 431.46,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-07-30 12:10:43"
+    },
+    {
         "ticker": "PCJEWELLER",
         "action": "\u26aa FORMING",
         "entry": 10.3,
@@ -1922,14 +2006,14 @@
     {
         "ticker": "PETRONET",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 277.1,
-        "sl": 265.39,
-        "tp1": 288.81,
-        "tp2": 300.51,
-        "tp3": 312.22,
+        "entry": 278.9,
+        "sl": 267.11,
+        "tp1": 290.69,
+        "tp2": 302.49,
+        "tp3": 314.28,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:26:39"
+        "time_received": "2026-07-30 12:10:47"
     },
     {
         "ticker": "PGIL",
@@ -1946,14 +2030,14 @@
     {
         "ticker": "PHOENIXLTD",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1910.5,
-        "sl": 1802.56,
-        "tp1": 2018.44,
-        "tp2": 2126.39,
-        "tp3": 2234.33,
+        "entry": 1887.9,
+        "sl": 1785.69,
+        "tp1": 1990.11,
+        "tp2": 2092.33,
+        "tp3": 2194.54,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:26:47"
+        "time_received": "2026-07-30 12:10:54"
     },
     {
         "ticker": "PNCINFRA",
@@ -1990,18 +2074,6 @@
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
         "time_received": "2026-07-03 12:33:43"
-    },
-    {
-        "ticker": "PREMIERENE",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1036.2,
-        "sl": 971.39,
-        "tp1": 1101.01,
-        "tp2": 1165.83,
-        "tp3": 1230.64,
-        "aligned": "MIXED \u2014 WEAK EDGE",
-        "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:27:04"
     },
     {
         "ticker": "PRICOLLTD",
@@ -2066,14 +2138,14 @@
     {
         "ticker": "PTCIL",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 17971.0,
-        "sl": 17145.71,
-        "tp1": 18796.29,
-        "tp2": 19621.57,
-        "tp3": 20446.86,
+        "entry": 17795.0,
+        "sl": 16981.86,
+        "tp1": 18608.14,
+        "tp2": 19421.29,
+        "tp3": 20234.43,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-07-29 12:27:07"
+        "time_received": "2026-07-30 12:11:13"
     },
     {
         "ticker": "PURVA",
@@ -2172,18 +2244,6 @@
         "time_received": "2026-07-03 12:34:24"
     },
     {
-        "ticker": "RCF",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 127.92,
-        "sl": 122.77,
-        "tp1": 133.07,
-        "tp2": 138.22,
-        "tp3": 143.37,
-        "aligned": "ALIGNED \u25bc SHORTS",
-        "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-07-29 12:27:17"
-    },
-    {
         "ticker": "REFEX",
         "action": "\u26aa FORMING",
         "entry": 358.4,
@@ -2222,14 +2282,14 @@
     {
         "ticker": "RHIM",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 395.65,
-        "sl": 369.03,
-        "tp1": 422.27,
-        "tp2": 448.89,
-        "tp3": 475.51,
+        "entry": 390.55,
+        "sl": 365.36,
+        "tp1": 415.74,
+        "tp2": 440.94,
+        "tp3": 466.13,
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-07-29 12:27:24"
+        "time_received": "2026-07-30 12:11:30"
     },
     {
         "ticker": "ROSSARI",
@@ -2340,28 +2400,16 @@
         "time_received": "2026-07-03 12:35:13"
     },
     {
-        "ticker": "SCHAEFFLER",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 4159.8,
-        "sl": 3956.67,
-        "tp1": 4362.93,
-        "tp2": 4566.06,
-        "tp3": 4769.19,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "BUY pullbacks",
-        "time_received": "2026-07-29 12:27:46"
-    },
-    {
         "ticker": "SCHNEIDER",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1280.9,
-        "sl": 1167.9,
-        "tp1": 1393.9,
-        "tp2": 1506.9,
-        "tp3": 1619.9,
+        "entry": 1298.4,
+        "sl": 1188.29,
+        "tp1": 1408.51,
+        "tp2": 1518.63,
+        "tp3": 1628.74,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:27:48"
+        "time_received": "2026-07-30 12:11:50"
     },
     {
         "ticker": "SENCO",
@@ -2606,26 +2654,14 @@
     {
         "ticker": "TATACOMM",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1780.7,
-        "sl": 1664.74,
-        "tp1": 1896.66,
-        "tp2": 2012.61,
-        "tp3": 2128.57,
+        "entry": 1773.7,
+        "sl": 1658.4,
+        "tp1": 1889.0,
+        "tp2": 2004.3,
+        "tp3": 2119.6,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:28:36"
-    },
-    {
-        "ticker": "TATATECH",
-        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
-        "entry": 742.4,
-        "sl": 688.81,
-        "tp1": 795.99,
-        "tp2": 849.57,
-        "tp3": 903.16,
-        "aligned": "MIXED \u2014 WEAK EDGE",
-        "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:28:48"
+        "time_received": "2026-07-30 12:12:35"
     },
     {
         "ticker": "TCI",
@@ -2688,18 +2724,6 @@
         "time_received": "2026-07-03 12:37:26"
     },
     {
-        "ticker": "TEJASNET",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 520.0,
-        "sl": 478.44,
-        "tp1": 561.56,
-        "tp2": 603.11,
-        "tp3": 644.67,
-        "aligned": "MIXED \u2014 WEAK EDGE",
-        "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:28:54"
-    },
-    {
         "ticker": "THANGAMAYL",
         "action": "\u26aa FORMING",
         "entry": 6159.5,
@@ -2710,6 +2734,18 @@
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
         "time_received": "2026-07-03 12:37:31"
+    },
+    {
+        "ticker": "THELEELA",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 468.1,
+        "sl": 439.11,
+        "tp1": 497.09,
+        "tp2": 526.09,
+        "tp3": 555.08,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-07-30 12:12:53"
     },
     {
         "ticker": "THOMASCOOK",
@@ -2738,14 +2774,14 @@
     {
         "ticker": "TITAGARH",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 833.85,
-        "sl": 780.79,
-        "tp1": 886.91,
-        "tp2": 939.98,
-        "tp3": 993.04,
+        "entry": 824.8,
+        "sl": 772.66,
+        "tp1": 876.94,
+        "tp2": 929.07,
+        "tp3": 981.21,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:29:02"
+        "time_received": "2026-07-30 12:13:00"
     },
     {
         "ticker": "TRANSRAILL",
@@ -2762,26 +2798,14 @@
     {
         "ticker": "TRENT",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 3005.2,
-        "sl": 2890.51,
-        "tp1": 3119.89,
-        "tp2": 3234.57,
-        "tp3": 3349.26,
+        "entry": 2999.2,
+        "sl": 2881.84,
+        "tp1": 3116.56,
+        "tp2": 3233.91,
+        "tp3": 3351.27,
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-07-29 12:29:10"
-    },
-    {
-        "ticker": "TRIDENT",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 24.86,
-        "sl": 23.71,
-        "tp1": 26.01,
-        "tp2": 27.17,
-        "tp3": 28.32,
-        "aligned": "MIXED \u2014 WEAK EDGE",
-        "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-07-29 12:29:12"
+        "time_received": "2026-07-30 12:13:07"
     },
     {
         "ticker": "TVSSCS",
@@ -2844,16 +2868,16 @@
         "time_received": "2026-07-03 12:38:37"
     },
     {
-        "ticker": "VIJAYA",
-        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
-        "entry": 1372.0,
-        "sl": 1282.57,
-        "tp1": 1461.43,
-        "tp2": 1550.86,
-        "tp3": 1640.29,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "BUY pullbacks",
-        "time_received": "2026-07-29 12:29:41"
+        "ticker": "VGUARD",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 316.65,
+        "sl": 297.49,
+        "tp1": 335.81,
+        "tp2": 354.96,
+        "tp3": 374.12,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-07-30 12:13:34"
     },
     {
         "ticker": "VIPIND",
@@ -2892,18 +2916,6 @@
         "time_received": "2026-07-03 12:38:49"
     },
     {
-        "ticker": "VOLTAS",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1313.3,
-        "sl": 1241.56,
-        "tp1": 1385.04,
-        "tp2": 1456.79,
-        "tp3": 1528.53,
-        "aligned": "ALIGNED \u25bc SHORTS",
-        "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-07-29 12:29:45"
-    },
-    {
         "ticker": "VSTIND",
         "action": "\u26aa FORMING",
         "entry": 268.4,
@@ -2914,18 +2926,6 @@
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
         "time_received": "2026-07-03 12:38:53"
-    },
-    {
-        "ticker": "VTL",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 629.55,
-        "sl": 591.16,
-        "tp1": 667.94,
-        "tp2": 706.32,
-        "tp3": 744.71,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:29:47"
     },
     {
         "ticker": "WAAREERTL",
@@ -2990,14 +2990,14 @@
     {
         "ticker": "WOCKPHARMA",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1916.5,
-        "sl": 1805.31,
-        "tp1": 2027.69,
-        "tp2": 2138.87,
-        "tp3": 2250.06,
+        "entry": 1904.0,
+        "sl": 1793.89,
+        "tp1": 2014.11,
+        "tp2": 2124.23,
+        "tp3": 2234.34,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-07-29 12:29:59"
+        "time_received": "2026-07-30 12:13:51"
     },
     {
         "ticker": "YATHARTH",
