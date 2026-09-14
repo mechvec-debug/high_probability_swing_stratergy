@@ -81,7 +81,7 @@
         "tp3": 1690.59,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:24:13"
+        "time_received": "2026-09-14 16:21:43"
     },
     {
         "ticker": "AETHER",
@@ -105,7 +105,7 @@
         "tp3": 1876.94,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:24:18"
+        "time_received": "2026-09-14 16:21:49"
     },
     {
         "ticker": "AGARWALEYE",
@@ -117,7 +117,7 @@
         "tp3": 590.15,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:24:20"
+        "time_received": "2026-09-14 16:21:50"
     },
     {
         "ticker": "AGI",
@@ -177,7 +177,7 @@
         "tp3": 2246.79,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:24:29"
+        "time_received": "2026-09-14 16:21:59"
     },
     {
         "ticker": "ALLCARGO",
@@ -225,7 +225,7 @@
         "tp3": 955.74,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:24:41"
+        "time_received": "2026-09-14 16:22:13"
     },
     {
         "ticker": "ARVIND",
@@ -441,7 +441,7 @@
         "tp3": 1772.19,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:25:27"
+        "time_received": "2026-09-14 16:23:01"
     },
     {
         "ticker": "BIRLACORPN",
@@ -477,7 +477,7 @@
         "tp3": 651.12,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:25:37"
+        "time_received": "2026-09-14 16:23:12"
     },
     {
         "ticker": "BORORENEW",
@@ -501,7 +501,7 @@
         "tp3": 828.23,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:25:43"
+        "time_received": "2026-09-14 16:23:18"
     },
     {
         "ticker": "CARTRADE",
@@ -597,7 +597,7 @@
         "tp3": 571.31,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:26:20"
+        "time_received": "2026-09-14 16:23:57"
     },
     {
         "ticker": "CYIENT",
@@ -609,7 +609,7 @@
         "tp3": 1371.85,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:26:31"
+        "time_received": "2026-09-14 16:24:08"
     },
     {
         "ticker": "CYIENTDLM",
@@ -681,7 +681,7 @@
         "tp3": 15624.0,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:26:49"
+        "time_received": "2026-09-14 16:24:27"
     },
     {
         "ticker": "DLF",
@@ -693,7 +693,7 @@
         "tp3": 748.17,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:26:51"
+        "time_received": "2026-09-14 16:24:29"
     },
     {
         "ticker": "DODLA",
@@ -741,7 +741,7 @@
         "tp3": 8409.86,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:26:59"
+        "time_received": "2026-09-14 16:24:38"
     },
     {
         "ticker": "EIEL",
@@ -909,7 +909,7 @@
         "tp3": 193.77,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:27:40"
+        "time_received": "2026-09-14 16:25:19"
     },
     {
         "ticker": "GALLANTT",
@@ -1113,7 +1113,7 @@
         "tp3": 1419.53,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:28:25"
+        "time_received": "2026-09-14 16:26:06"
     },
     {
         "ticker": "HEMIPROP",
@@ -1149,7 +1149,7 @@
         "tp3": 5989.07,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:28:28"
+        "time_received": "2026-09-14 16:26:10"
     },
     {
         "ticker": "HGINFRA",
@@ -1185,7 +1185,7 @@
         "tp3": 632.64,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:28:35"
+        "time_received": "2026-09-14 16:26:18"
     },
     {
         "ticker": "HINDZINC",
@@ -1197,7 +1197,7 @@
         "tp3": 696.02,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:28:41"
+        "time_received": "2026-09-14 16:26:24"
     },
     {
         "ticker": "ICIL",
@@ -1365,7 +1365,7 @@
         "tp3": 1320.13,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:29:27"
+        "time_received": "2026-09-14 16:27:11"
     },
     {
         "ticker": "JINDWORLD",
@@ -1437,7 +1437,7 @@
         "tp3": 1416.76,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:29:38"
+        "time_received": "2026-09-14 16:27:22"
     },
     {
         "ticker": "JUBLFOOD",
@@ -1449,7 +1449,7 @@
         "tp3": 544.93,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:29:40"
+        "time_received": "2026-09-14 16:27:24"
     },
     {
         "ticker": "JUSTDIAL",
@@ -1473,7 +1473,7 @@
         "tp3": 1428.09,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:29:48"
+        "time_received": "2026-09-14 16:27:33"
     },
     {
         "ticker": "KAYNES",
@@ -1485,7 +1485,7 @@
         "tp3": 4363.26,
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-09-11 14:29:52"
+        "time_received": "2026-09-14 16:27:36"
     },
     {
         "ticker": "KIRLPNU",
@@ -1617,7 +1617,7 @@
         "tp3": 1387.11,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:30:20"
+        "time_received": "2026-09-14 16:28:05"
     },
     {
         "ticker": "LTFOODS",
@@ -1629,7 +1629,7 @@
         "tp3": 522.04,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:30:24"
+        "time_received": "2026-09-14 16:28:09"
     },
     {
         "ticker": "LTTS",
@@ -1641,7 +1641,7 @@
         "tp3": 3827.81,
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-09-11 14:30:25"
+        "time_received": "2026-09-14 16:28:11"
     },
     {
         "ticker": "LXCHEM",
@@ -1749,7 +1749,7 @@
         "tp3": 823.61,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:30:50"
+        "time_received": "2026-09-14 16:28:36"
     },
     {
         "ticker": "MOIL",
@@ -1773,7 +1773,7 @@
         "tp3": 2680.16,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:30:56"
+        "time_received": "2026-09-14 16:28:42"
     },
     {
         "ticker": "MSTCLTD",
@@ -1833,7 +1833,7 @@
         "tp3": 6339.67,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:31:16"
+        "time_received": "2026-09-14 16:29:02"
     },
     {
         "ticker": "NFL",
@@ -1857,7 +1857,7 @@
         "tp3": 55.43,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:31:26"
+        "time_received": "2026-09-14 16:29:13"
     },
     {
         "ticker": "OPTIEMUS",
@@ -1953,7 +1953,7 @@
         "tp3": 388.74,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:31:45"
+        "time_received": "2026-09-14 16:29:33"
     },
     {
         "ticker": "PCJEWELLER",
@@ -1977,7 +1977,7 @@
         "tp3": 322.56,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:31:49"
+        "time_received": "2026-09-14 16:29:37"
     },
     {
         "ticker": "PGIL",
@@ -2025,7 +2025,7 @@
         "tp3": 2101.17,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:32:03"
+        "time_received": "2026-09-14 16:29:52"
     },
     {
         "ticker": "POWERMECH",
@@ -2301,7 +2301,7 @@
         "tp3": 222.41,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:32:42"
+        "time_received": "2026-09-14 16:30:33"
     },
     {
         "ticker": "SAMHI",
@@ -2361,7 +2361,7 @@
         "tp3": 608.28,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:32:47"
+        "time_received": "2026-09-14 16:30:39"
     },
     {
         "ticker": "SAREGAMA",
@@ -2373,7 +2373,7 @@
         "tp3": 611.76,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:32:49"
+        "time_received": "2026-09-14 16:30:41"
     },
     {
         "ticker": "SENCO",
@@ -2541,7 +2541,7 @@
         "tp3": 559.18,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:33:16"
+        "time_received": "2026-09-14 16:31:08"
     },
     {
         "ticker": "SUNFLAG",
@@ -2577,7 +2577,7 @@
         "tp3": 3891.11,
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-09-11 14:33:23"
+        "time_received": "2026-09-14 16:31:16"
     },
     {
         "ticker": "SURYAROSNI",
@@ -2601,7 +2601,7 @@
         "tp3": 328.28,
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-09-11 14:33:28"
+        "time_received": "2026-09-14 16:31:22"
     },
     {
         "ticker": "SWSOLAR",
@@ -2661,7 +2661,7 @@
         "tp3": 915.02,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:33:48"
+        "time_received": "2026-09-14 16:31:43"
     },
     {
         "ticker": "TCI",
@@ -2769,7 +2769,7 @@
         "tp3": 5573.64,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:34:07"
+        "time_received": "2026-09-14 16:32:01"
     },
     {
         "ticker": "TRANSRAILL",
@@ -2817,7 +2817,7 @@
         "tp3": 1368.4,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:34:27"
+        "time_received": "2026-09-14 16:32:23"
     },
     {
         "ticker": "USHAMART",
@@ -2829,7 +2829,7 @@
         "tp3": 573.66,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
-        "time_received": "2026-09-11 14:34:30"
+        "time_received": "2026-09-14 16:32:27"
     },
     {
         "ticker": "V2RETAIL",
@@ -2877,7 +2877,7 @@
         "tp3": 376.33,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-09-11 14:34:37"
+        "time_received": "2026-09-14 16:32:35"
     },
     {
         "ticker": "VIPIND",
@@ -3009,7 +3009,7 @@
         "tp3": 1315.0,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-09-11 14:35:04"
+        "time_received": "2026-09-14 16:33:02"
     },
     {
         "ticker": "ZYDUSWELL",
