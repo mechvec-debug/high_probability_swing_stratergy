@@ -48,6 +48,18 @@
         "time_received": "2026-07-03 12:19:39"
     },
     {
+        "ticker": "ACMESOLAR",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 412.5,
+        "sl": 371.78,
+        "tp1": 453.22,
+        "tp2": 493.94,
+        "tp3": 534.66,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-11-03 17:48:51"
+    },
+    {
         "ticker": "ACUTAAS",
         "action": "\u26aa FORMING",
         "entry": 3694.8,
@@ -396,6 +408,18 @@
         "time_received": "2026-07-03 12:22:20"
     },
     {
+        "ticker": "BLUESTARCO",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 1572.5,
+        "sl": 1448.14,
+        "tp1": 1696.86,
+        "tp2": 1821.21,
+        "tp3": 1945.57,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-11-03 17:50:31"
+    },
+    {
         "ticker": "BORORENEW",
         "action": "\u26aa FORMING",
         "entry": 621.7,
@@ -730,6 +754,18 @@
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
         "time_received": "2026-07-03 12:25:22"
+    },
+    {
+        "ticker": "FSL",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 289.0,
+        "sl": 261.44,
+        "tp1": 316.56,
+        "tp2": 344.11,
+        "tp3": 371.67,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-11-03 17:52:34"
     },
     {
         "ticker": "GAEL",
@@ -1212,6 +1248,18 @@
         "time_received": "2026-07-03 12:29:27"
     },
     {
+        "ticker": "JYOTICNC",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 967.4,
+        "sl": 869.61,
+        "tp1": 1065.19,
+        "tp2": 1162.97,
+        "tp3": 1260.76,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-11-03 17:54:47"
+    },
+    {
         "ticker": "KIRLPNU",
         "action": "\ud83d\udd35 IN BUY ZONE",
         "entry": 1825.9,
@@ -1378,6 +1426,18 @@
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
         "time_received": "2026-07-03 12:31:00"
+    },
+    {
+        "ticker": "MARICO",
+        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
+        "entry": 878.4,
+        "sl": 834.25,
+        "tp1": 922.55,
+        "tp2": 966.7,
+        "tp3": 1010.85,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "BUY pullbacks",
+        "time_received": "2026-11-03 17:55:41"
     },
     {
         "ticker": "MASTEK",
@@ -2436,6 +2496,18 @@
         "time_received": "2026-07-03 12:39:02"
     },
     {
+        "ticker": "WELCORP",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 2315.5,
+        "sl": 2027.16,
+        "tp1": 2603.84,
+        "tp2": 2892.19,
+        "tp3": 3180.53,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "low conviction \u2014 wait",
+        "time_received": "2026-11-03 18:00:00"
+    },
+    {
         "ticker": "WELENT",
         "action": "\u26aa FORMING",
         "entry": 603.25,
@@ -2458,6 +2530,18 @@
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
         "time_received": "2026-07-03 12:39:10"
+    },
+    {
+        "ticker": "WHIRLPOOL",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 815.0,
+        "sl": 741.32,
+        "tp1": 888.68,
+        "tp2": 962.36,
+        "tp3": 1036.04,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-11-03 18:00:03"
     },
     {
         "ticker": "YATHARTH",
