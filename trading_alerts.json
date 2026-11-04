@@ -50,14 +50,14 @@
     {
         "ticker": "ACMESOLAR",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 412.5,
-        "sl": 371.78,
-        "tp1": 453.22,
-        "tp2": 493.94,
-        "tp3": 534.66,
+        "entry": 421.0,
+        "sl": 380.64,
+        "tp1": 461.36,
+        "tp2": 501.73,
+        "tp3": 542.09,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-11-03 17:48:51"
+        "time_received": "2026-11-04 17:58:24"
     },
     {
         "ticker": "ACUTAAS",
@@ -178,6 +178,18 @@
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
         "time_received": "2026-07-03 12:20:37"
+    },
+    {
+        "ticker": "APLLTD",
+        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
+        "entry": 906.7,
+        "sl": 848.74,
+        "tp1": 964.66,
+        "tp2": 1022.63,
+        "tp3": 1080.59,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-11-04 17:59:05"
     },
     {
         "ticker": "ARVIND",
@@ -410,14 +422,14 @@
     {
         "ticker": "BLUESTARCO",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 1572.5,
-        "sl": 1448.14,
-        "tp1": 1696.86,
-        "tp2": 1821.21,
-        "tp3": 1945.57,
+        "entry": 1555.0,
+        "sl": 1430.09,
+        "tp1": 1679.91,
+        "tp2": 1804.83,
+        "tp3": 1929.74,
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-11-03 17:50:31"
+        "time_received": "2026-11-04 18:00:07"
     },
     {
         "ticker": "BORORENEW",
@@ -514,6 +526,18 @@
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
         "time_received": "2026-07-03 12:23:13"
+    },
+    {
+        "ticker": "COHANCE",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 450.45,
+        "sl": 414.48,
+        "tp1": 486.42,
+        "tp2": 522.39,
+        "tp3": 558.36,
+        "aligned": "MIXED \u2014 WEAK EDGE",
+        "plan": "CAUTION: Low Conviction",
+        "time_received": "2026-11-04 18:00:47"
     },
     {
         "ticker": "CYIENTDLM",
@@ -624,6 +648,18 @@
         "time_received": "2026-07-03 12:24:33"
     },
     {
+        "ticker": "EIHOTEL",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 299.75,
+        "sl": 277.75,
+        "tp1": 321.75,
+        "tp2": 343.75,
+        "tp3": 365.75,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-11-04 18:01:36"
+    },
+    {
         "ticker": "EKC",
         "action": "\ud83d\udd35 IN BUY ZONE",
         "entry": 117.77,
@@ -670,6 +706,18 @@
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
         "time_received": "2026-07-03 12:24:49"
+    },
+    {
+        "ticker": "ENGINERSIN",
+        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
+        "entry": 300.85,
+        "sl": 271.16,
+        "tp1": 330.54,
+        "tp2": 360.24,
+        "tp3": 389.93,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "BUY pullbacks",
+        "time_received": "2026-11-04 18:01:48"
     },
     {
         "ticker": "ENTERO",
@@ -758,14 +806,14 @@
     {
         "ticker": "FSL",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 289.0,
-        "sl": 261.44,
-        "tp1": 316.56,
-        "tp2": 344.11,
-        "tp3": 371.67,
+        "entry": 290.4,
+        "sl": 263.86,
+        "tp1": 316.94,
+        "tp2": 343.47,
+        "tp3": 370.01,
         "aligned": "MIXED \u2014 WEAK EDGE",
         "plan": "CAUTION: Low Conviction",
-        "time_received": "2026-11-03 17:52:34"
+        "time_received": "2026-11-04 18:02:12"
     },
     {
         "ticker": "GAEL",
@@ -1248,18 +1296,6 @@
         "time_received": "2026-07-03 12:29:27"
     },
     {
-        "ticker": "JYOTICNC",
-        "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 967.4,
-        "sl": 869.61,
-        "tp1": 1065.19,
-        "tp2": 1162.97,
-        "tp3": 1260.76,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "low conviction \u2014 wait",
-        "time_received": "2026-11-03 17:54:47"
-    },
-    {
         "ticker": "KIRLPNU",
         "action": "\ud83d\udd35 IN BUY ZONE",
         "entry": 1825.9,
@@ -1356,6 +1392,18 @@
         "time_received": "2026-07-03 12:30:12"
     },
     {
+        "ticker": "LALPATHLAB",
+        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
+        "entry": 2029.4,
+        "sl": 1897.34,
+        "tp1": 2161.46,
+        "tp2": 2293.51,
+        "tp3": 2425.57,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "BUY pullbacks",
+        "time_received": "2026-11-04 18:04:52"
+    },
+    {
         "ticker": "LLOYDSENT",
         "action": "\u26aa FORMING",
         "entry": 75.35,
@@ -1426,18 +1474,6 @@
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
         "time_received": "2026-07-03 12:31:00"
-    },
-    {
-        "ticker": "MARICO",
-        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
-        "entry": 878.4,
-        "sl": 834.25,
-        "tp1": 922.55,
-        "tp2": 966.7,
-        "tp3": 1010.85,
-        "aligned": "ALIGNED \u25b2 LONGS",
-        "plan": "BUY pullbacks",
-        "time_received": "2026-11-03 17:55:41"
     },
     {
         "ticker": "MASTEK",
@@ -2244,6 +2280,18 @@
         "time_received": "2026-07-03 12:36:56"
     },
     {
+        "ticker": "TARIL",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 317.55,
+        "sl": 286.64,
+        "tp1": 348.46,
+        "tp2": 379.38,
+        "tp3": 410.29,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-11-04 18:08:27"
+    },
+    {
         "ticker": "TCI",
         "action": "\ud83d\udd35 IN BUY ZONE",
         "entry": 930.85,
@@ -2350,6 +2398,18 @@
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
         "time_received": "2026-07-03 12:37:56"
+    },
+    {
+        "ticker": "TRIDENT",
+        "action": "\ud83d\udfe1 WAIT FOR BUY ZONE",
+        "entry": 23.89,
+        "sl": 22.14,
+        "tp1": 25.64,
+        "tp2": 27.4,
+        "tp3": 29.15,
+        "aligned": "ALIGNED \u25bc SHORTS",
+        "plan": "AVOID: Macro Downtrend",
+        "time_received": "2026-11-04 18:09:08"
     },
     {
         "ticker": "TVSSCS",
@@ -2498,14 +2558,14 @@
     {
         "ticker": "WELCORP",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 2315.5,
-        "sl": 2027.16,
-        "tp1": 2603.84,
-        "tp2": 2892.19,
-        "tp3": 3180.53,
+        "entry": 2400.0,
+        "sl": 2109.77,
+        "tp1": 2690.23,
+        "tp2": 2980.46,
+        "tp3": 3270.69,
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "low conviction \u2014 wait",
-        "time_received": "2026-11-03 18:00:00"
+        "time_received": "2026-11-04 18:09:46"
     },
     {
         "ticker": "WELENT",
@@ -2534,14 +2594,14 @@
     {
         "ticker": "WHIRLPOOL",
         "action": "\ud83d\udd35 IN BUY ZONE",
-        "entry": 815.0,
-        "sl": 741.32,
-        "tp1": 888.68,
-        "tp2": 962.36,
-        "tp3": 1036.04,
+        "entry": 826.15,
+        "sl": 763.25,
+        "tp1": 889.05,
+        "tp2": 951.95,
+        "tp3": 1014.85,
         "aligned": "ALIGNED \u25bc SHORTS",
         "plan": "AVOID: Macro Downtrend",
-        "time_received": "2026-11-03 18:00:03"
+        "time_received": "2026-11-04 18:09:49"
     },
     {
         "ticker": "YATHARTH",
@@ -2554,6 +2614,18 @@
         "aligned": "ALIGNED \u25b2 LONGS",
         "plan": "BUY pullbacks",
         "time_received": "2026-07-03 12:39:15"
+    },
+    {
+        "ticker": "ZYDUSLIFE",
+        "action": "\ud83d\udd35 IN BUY ZONE",
+        "entry": 1188.1,
+        "sl": 1114.87,
+        "tp1": 1261.33,
+        "tp2": 1334.56,
+        "tp3": 1407.79,
+        "aligned": "ALIGNED \u25b2 LONGS",
+        "plan": "BUY pullbacks",
+        "time_received": "2026-11-04 18:10:03"
     },
     {
         "ticker": "ZYDUSWELL",
